@@ -8,10 +8,10 @@ int main()
     lower = 0;
     upper = 300;
     step = 20;
-    char c = 'C';
-    char f = 'F';
+    // char c = 'C';
+    // char f = 'F';
 
-    printf("%3c %6c \n", c, f);
+    printf("%3c %6c \n", 'C', 'F');
     fahr = lower;
     while (fahr <= upper)
     {
