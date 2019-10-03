@@ -1,14 +1,11 @@
 #include <stdio.h>
-#define MAX 100
-#define IN 1
-#define OUT 0
+#define MAX 10
 
 int main()
 {
-	int c, i, n, len, state;
+	int c, i, n, len;
 	int list[MAX];
 
-	state = OUT;
 	len = 0;
 	for (i = 0; i < MAX; ++i)
 	{
@@ -17,23 +14,13 @@ int main()
 
 	while (((c = getchar())) != EOF)
 	{
-		if (c == ' ' || c == '\n' || c == '\t')
+		if (c >= 'A' && c <= 'Z')
 		{
-			if (len > 0)
-			{
-				++list[len];
-			}
-			state = OUT;
-			len = 0;
+			++list[c - 'A'];
 		}
-		else if (state == OUT)
+		else if (c >= 'a' && c <= 'z')
 		{
-			state = IN;
-			++len;
-		}
-		else if (state == IN)
-		{
-			++len;
+			++list[c - 'a'];
 		}
 	}
 
