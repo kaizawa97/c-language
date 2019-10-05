@@ -3,7 +3,7 @@
 
 int main()
 {
-	int c, i, n, len;
+	int c, i, n, a, len;
 	int list[MAX];
 
 	len = 0;
@@ -24,9 +24,9 @@ int main()
 		}
 	}
 
-	for (i = 0; i < MAX; ++i)
+	for (a = 'a'; a <= 'z'; ++a)
 	{
-		printf("%d", i);
+		printf("%c\n", a);
 		for (n = 0; n < list[i + 1]; ++n)
 		{
 			putchar('*');
