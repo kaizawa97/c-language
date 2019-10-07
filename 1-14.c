@@ -1,12 +1,12 @@
 #include <stdio.h>
-#define MAX 10
+#define MAX 10000
 
 int main()
 {
-	int c, i, n, a, len;
+	int i, c, n, a;
 	int list[MAX];
+	char h[256];
 
-	len = 0;
 	for (i = 0; i < MAX; ++i)
 	{
 		list[i] = 0;
@@ -24,14 +24,23 @@ int main()
 		}
 	}
 
-	for (a = 'a'; a <= 'z'; ++a)
+	for (i = 0; i < MAX; ++i)
 	{
-		printf("%c\n", a);
-		for (n = 0; n < list[i + 1]; ++n)
+		printf("%d", i);
+		for (n = 0; n < list[i]; ++n)
 		{
 			putchar('*');
 		}
 		putchar('\n');
 	}
+	// for (i = 'a'; i < 'z'; ++i)
+	// {
+	// 	printf("%c", i);
+	// 	for (n = 0; n < list[i]; ++n)
+	// 	{
+	// 		putchar('*');
+	// 	}
+	// 	putchar('\n');
+	// }
 	return 0;
 }
