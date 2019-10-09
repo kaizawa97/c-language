@@ -3,9 +3,8 @@
 
 int main()
 {
-	int i, c, n, a;
+	int i, c, n, u;
 	int list[MAX];
-	char h[256];
 
 	for (i = 0; i < MAX; ++i)
 	{
@@ -23,24 +22,15 @@ int main()
 			++list[c - 'a'];
 		}
 	}
-
-	for (i = 0; i < MAX; ++i)
+	for (i = 'a'; i <= 'z'; ++i)
 	{
-		printf("%d", i);
-		for (n = 0; n < list[i]; ++n)
+		printf("%c: ", i);
+		for (n = 0; n < list[u]; ++n)
 		{
 			putchar('*');
 		}
 		putchar('\n');
+		++u;
 	}
-	// for (i = 'a'; i < 'z'; ++i)
-	// {
-	// 	printf("%c", i);
-	// 	for (n = 0; n < list[i]; ++n)
-	// 	{
-	// 		putchar('*');
-	// 	}
-	// 	putchar('\n');
-	// }
 	return 0;
 }
