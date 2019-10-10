@@ -1,26 +1,19 @@
 #include <stdio.h>
 
-int power(int m, int n);
+int fahr(int m);
 
-int main()
+int main(void)
 {
-	int i;
-
-	for (i = 0; i < 10; ++i)
-	{
-		printf("%d %d %d \n", i, power(2, i), power(-3, i));
-	}
-
-	return 0;
+	printf("%d\n", fahr(0));
 }
 
-int power(int base, int n)
+int fahr(int m)
 {
-	int i, p;
-	p = 1;
-	for (i = 1; i <= n; ++i)
-	{
-		p = p * base;
-	}
-	return p;
+
+	float fahr, celsius; //温度の基準
+
+	fahr = m;							   //代入
+	celsius = (5.0 / 9.0) * (fahr - 32.0); //計算方式
+
+	return celsius;
 }
