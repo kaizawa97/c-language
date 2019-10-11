@@ -1,9 +1,9 @@
 #include <stdio.h>
 #define MAX 10000
 
-int main()
+int main() 
 {
-	int i, c, n, u;
+	int i, c, n, u; 
 	int list[MAX];
 
 	for (i = 0; i < MAX; ++i)

@@ -1,1 +1,8 @@
 a ab abc abcd abcde abcdef abcdefg abcdefgh bcdefghi bcdefghij
+I'm working on a program right now which says that 
+abcdh
+I shouldn't try to bring down the site with automated scanners. 
+abcda
+Does this relate to automatic vulnerability scanners only, or 
+am I not allowed to use tools like Turbo Intruder with a list of potentially useful endpoints?
+abcde
