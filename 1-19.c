@@ -6,24 +6,14 @@ void copy(char to[], char from[]);
 
 int main(void)
 {
-	int len, max, i;
+	int len, max, fixlen, newline, i;
 	char line[MAX];
 	char longest[MAX];
 
 	max = 0;
 	while ((len = get_line(line, MAX)) > 0)
 	{
-		for (i = 100; 0 < i; --i)
-		{
-			if (line[i] > 'a' && line[i] < 'z')
-			{
-				--len;
-				line[i + 1] = '\0';
-				break;
-			}
-		}
-		printf("%s", line);
-		return 0;
+		printf("%s", ) return 0;
 	}
 }
 
@@ -42,4 +32,8 @@ int get_line(char s[], int lim)
 	}
 	s[i] = '\0';
 	return i;
+}
+
+int reverse(char s[], int number)
+{
 }
