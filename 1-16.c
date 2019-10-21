@@ -6,22 +6,17 @@ void copy(char to[], char from[]);
 
 int main(void)
 {
-	int len, max, i;
+	int len, max, i, n;
 	char line[MAX];
 	char longest[MAX];
 
 	max = 0;
 	while ((len = get_line(line, MAX)) > 0)
 	{
-		if (len == 5)
+		n = 5;
+		if (len == n)
 		{
 			printf("%s\n", line);
-		}
-
-		if (len > max)
-		{
-			max = len;
-			copy(longest, line);
 		}
 	}
 	return 0;
@@ -40,7 +35,7 @@ int get_line(char s[], int lim)
 			++i;
 		}
 	}
-	s[i] = '\n';
+	s[i] = '\0';
 	return i;
 }
 
