@@ -2,19 +2,20 @@
 #define MAX 1024
 
 int get_line(char line[], int maxline);
-void copy(char to[], char from[]);
+int reverse(int len, char str[]);
+char line[MAX];
 
 int main(void)
 {
-	int len, max, fixlen, newline, i;
-	char line[MAX];
-	char longest[MAX];
+	int len, max, newline, i;
+	char x;
 
 	max = 0;
 	while ((len = get_line(line, MAX)) > 0)
 	{
-		printf("%s", ) return 0;
+		reverse(len, line);
 	}
+	return 0;
 }
 
 int get_line(char s[], int lim)
@@ -34,6 +35,16 @@ int get_line(char s[], int lim)
 	return i;
 }
 
-int reverse(char s[], int number)
+int reverse(int len, char str[])
 {
+	int i;
+	char copy;
+
+	len--;
+
+	for (i = len; i >= 0; i--)
+	{
+		printf("%c", str[i]);
+	}
+	printf("\n");
 }
