@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-#define TAB 8
-
 int main()
 {
 	char c, i;
